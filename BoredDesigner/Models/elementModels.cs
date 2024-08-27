@@ -8,7 +8,7 @@
 
     public class Color
     {
-
+        
         public string HexCode { get; set; } // Store color as a hex string
     }
 
