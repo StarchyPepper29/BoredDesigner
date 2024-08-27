@@ -10,7 +10,7 @@ namespace BoredDesigner.Controllers
         [HttpGet]
         public IActionResult GetHello()
         {
-            return Ok("Hello Someone!");
+            return Ok("Hello dev!");
         }
     }
 }
