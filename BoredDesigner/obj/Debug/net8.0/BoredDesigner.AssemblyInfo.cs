@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BoredDesigner")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e63b897af0b18c3b43b314655f141ad742d3b9ae")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd5a57214b837e88f9ed3d2d8b3f91a854c30fcc")]
 [assembly: System.Reflection.AssemblyProductAttribute("BoredDesigner")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BoredDesigner")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

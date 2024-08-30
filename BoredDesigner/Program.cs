@@ -6,20 +6,15 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllers();
 
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-
-builder.Services.AddDbContext<BoredDesignerContext>(options =>
-    options.UseSqlServer(connectionString));
-
-// Define a CORS policy
+// Configure CORS to allow requests from React frontend
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowSpecificOrigins",
-        policy =>
+    options.AddPolicy("AllowReactApp",
+        builder =>
         {
-            policy.WithOrigins("http://localhost:3000") // Replace with your frontend origin
-                  .AllowAnyHeader()
-                  .AllowAnyMethod();
+            builder.WithOrigins("http://localhost:3000") // React app URL
+                   .AllowAnyHeader()
+                   .AllowAnyMethod();
         });
 });
 
@@ -31,11 +26,8 @@ if (app.Environment.IsDevelopment())
     app.UseDeveloperExceptionPage();
 }
 
-// Apply the CORS policy
-app.UseCors("AllowSpecificOrigins");
-
 app.UseHttpsRedirection();
 app.UseAuthorization();
-app.UseRouting();
+app.UseCors("AllowReactApp");
 app.MapControllers();
 app.Run();
