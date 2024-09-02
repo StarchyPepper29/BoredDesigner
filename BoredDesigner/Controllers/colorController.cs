@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections.Generic;
 
 namespace BoredDesigner.Controllers
 {
@@ -9,17 +8,13 @@ namespace BoredDesigner.Controllers
     public class ColorController : ControllerBase
     {
         [HttpGet]
-        public IActionResult GetRandomHexCodes()
+        public IActionResult GetRandomHexCode()
         {
-            // Generate a list of 5 random hex color codes
-            List<string> hexCodes = new List<string>();
-            for (int i = 0; i < 5; i++)
-            {
-                hexCodes.Add(GenerateRandomHexCode());
-            }
+            // Generate a single random hex color code
+            string hexCode = GenerateRandomHexCode();
 
-            // Return the list as a JSON response
-            return Ok(new { Colors = hexCodes });
+            // Return the hex color code as a JSON response
+            return Ok(new { Color = hexCode });
         }
 
         // Helper method to generate a random hex color code
