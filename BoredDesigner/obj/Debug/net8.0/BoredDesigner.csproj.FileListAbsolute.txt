@@ -139,4 +139,3 @@ E:\Learning\StarchyMoodboards\BoredDesigner\obj\Debug\net8.0\BoredDesigner.pdb
 E:\Learning\StarchyMoodboards\BoredDesigner\obj\Debug\net8.0\BoredDesigner.genruntimeconfig.cache
 E:\Learning\StarchyMoodboards\BoredDesigner\obj\Debug\net8.0\ref\BoredDesigner.dll
 E:\Learning\StarchyMoodboards\BoredDesigner\obj\Debug\net8.0\BoredDesigner.sourcelink.json
-E:\Learning\StarchyMoodboards\BoredDesigner\bin\Debug\net8.0\Tools\fonts.json
