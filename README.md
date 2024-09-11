@@ -32,6 +32,8 @@ I waltz through a .NET crash course to get a feel of how it looks like with resp
 I jumped in head first into the concrete and tried to make something that work migrations and all errors solved :D
 hello world never felt so rewarding
 create react app acting moody wth
+![image](https://github.com/user-attachments/assets/e70293e7-0f88-4268-a18c-b731787934fc)
+
 all done first route said and im asking gpt to tutor me about everything I need to know
 MVC set up
 front-end directory not comitting wth
