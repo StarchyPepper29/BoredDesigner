@@ -3,6 +3,7 @@ using BoredDesigner;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BoredDesigner.Migrations
 {
     [DbContext(typeof(BoredDesignerContext))]
-    partial class BoredDesignerContextModelSnapshot : ModelSnapshot
+    [Migration("20240912081754_UpdateMoodboardSchemaAgain")]
+    partial class UpdateMoodboardSchemaAgain
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

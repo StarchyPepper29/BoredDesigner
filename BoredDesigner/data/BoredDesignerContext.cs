@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-
+using Newtonsoft.Json;
 namespace BoredDesigner
 {
     public class BoredDesignerContext : DbContext
@@ -11,13 +11,16 @@ namespace BoredDesigner
 
         public DbSet<User> Users { get; set; }
         public DbSet<Moodboard> Moodboards { get; set; }
-        public DbSet<Font> Fonts { get; set; }
-        public DbSet<Color> Colors { get; set; }
-        public DbSet<Image> Images { get; set; }
+        // public DbSet<Font> Fonts { get; set; }
+        // public DbSet<Color> Colors { get; set; }
+        // public DbSet<Image> Images { get; set; }
         
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+        modelBuilder.Entity<Moodboard>().ToTable("Moodboards");
+
+      
             // Configure only the entities you have
             // Example:
             // modelBuilder.Entity<User>()
