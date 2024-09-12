@@ -53,5 +53,13 @@ All goofy errors fixed what we have is
   * DASHING Ui design created by yours truly
 
 
-
+DAY 2:
+* The moodboard model revolted alongside the DBContext and the controller itself and nothing is working now
+* Moodboards will have a primary id which I will configure the generation of later that will be the primary key (after hours of docs on how onModelCreation works)
+* A demo PUT request isnt working for a moodboard because database is not in sync WHAT! after hours of tweaks i realized it was because I had unknowingly manually made a table with same name as Moodboards with mismatching columsn
+* I ran newer migrations and edited the model to store each color separately for
+      A) Laziness since Json convertion of a list is being hit with a brick you have never seen before
+      B) In the long run it will make locking and fetching colors easier. Eh eh EH
+(istg this is why nobody loves you SQL databases)
+* It works after hours the first api call sees the light of day one small step for man one giant leap for humanity
 
