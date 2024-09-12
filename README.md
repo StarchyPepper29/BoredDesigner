@@ -32,11 +32,11 @@ Its a pun. I know it barely lands it's like "Board" Designer but youre bored bec
 
 Below are the Logs (Not from day one but better late than never)
 * Day -n to 1
-I spent hours trying to set this up with no prior knowledge of .NET.
-I waltz through a .NET crash course to get a feel of how it looks like with respect to node (far scarier I came to learn)
-I jumped in head first into the concrete and tried to make something that work migrations and all errors solved :D
-hello world never felt so rewarding
-create react app acting moody wth
+  * I spent hours trying to set this up with no prior knowledge of .NET.
+  * I waltz through a .NET crash course to get a feel of how it looks like with respect to node (far scarier I came to learn)
+  * I jumped in head first into the concrete and tried to make something that work migrations and all errors solved :D
+  * hello world never felt so rewarding
+  * create react app acting moody wth
 
 
 
