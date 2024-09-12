@@ -20,15 +20,15 @@ namespace BoredDesigner
         {
             // Configure only the entities you have
             // Example:
-            modelBuilder.Entity<User>()
-                .HasMany(u => u.Moodboards)
-                .WithOne(mb => mb.User)
-                .HasForeignKey(mb => mb.UserId);
+            // modelBuilder.Entity<User>()
+            //     .HasMany(u => u.Moodboards)
+            //     .WithOne(mb => mb.User)
+            //     .HasForeignKey(mb => mb.UserId);
 
-            modelBuilder.Entity<Moodboard>()
-                .HasOne(mb => mb.User)
-                .WithMany(u => u.Moodboards)
-                .HasForeignKey(mb => mb.UserId);
+            // modelBuilder.Entity<Moodboard>()
+            //     .HasOne(mb => mb.User)
+            //     .WithMany(u => u.Moodboards)
+            //     .HasForeignKey(mb => mb.UserId);
 
             // Remove configurations for removed entities
             // If you need to add any new configurations for other entities, do so here

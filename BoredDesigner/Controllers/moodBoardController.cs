@@ -9,9 +9,10 @@ namespace BoredDesigner.Controllers
     [ApiController]
     public class MoodboardController : ControllerBase
     {
-        private readonly AppDbContext _context;
+        private readonly BoredDesignerContext _context;
 
-        public MoodboardController(AppDbContext context)
+        // Inject the BoredDesignerContext in the constructor
+        public MoodboardController(BoredDesignerContext context)
         {
             _context = context;
         }
