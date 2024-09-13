@@ -57,6 +57,12 @@ DAY 2:
 * The moodboard model revolted alongside the DBContext and the controller itself and nothing is working now
 * Moodboards will have a primary id which I will configure the generation of later that will be the primary key (after hours of docs on how onModelCreation works)
 * A demo PUT request isnt working for a moodboard because database is not in sync WHAT! after hours of tweaks i realized it was because I had unknowingly manually made a table with same name as Moodboards with mismatching columsn
+
+
+DAY 3:
+* In an attempt to add front end directory to tracking... I irreversibly deleted it. Never ask GPT for sensitive advice. there goes half the project T-T
+* I had made a basic lock button but that matters not anymore. I will work on the API and the sufficient responses and make the front-end at the end making sure its TRACKED AIDJASIDJAISdjaisdj
+* 
 * I ran newer migrations and edited the model to store each color separately for
       A) Laziness since Json convertion of a list is being hit with a brick you have never seen before
       B) In the long run it will make locking and fetching colors easier. Eh eh EH
