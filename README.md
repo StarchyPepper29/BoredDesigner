@@ -69,3 +69,8 @@ DAY 3:
 (istg this is why nobody loves you SQL databases)
 * It works after hours the first api call sees the light of day one small step for man one giant leap for humanity
 
+DAY 4:
+* Fixed a very weird issue with SQL server shutting itself down had to poke it awake in SQL server manager and ran migrations
+* What migrations you ask? User model and moodboard models changed so that moodboard ID can be saved against user table to fetch and apply API calls on
+* API calls you ask? All moodboard CRUD endpoints have been set up and should authorize
+* (I will fit in illustrations later)
